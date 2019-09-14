@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!--<script type="text/javascript" src="MyLogger.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="MyMath.js"></script>
+        <script type="text/javascript" src="MyLogger.js"></script>
+        <script type="text/javascript" src="MyApp.js"></script>
+        <script type="text/javascript"> 
+        $(document).ready(function(){
+            execute('$logger.log("Sum:", $math.sum(a, b))', { a: 17, b: 3 });
+            execute('$logger.log("Mul:", $math.mul(a, b))', { a: 17, b: 3 });
+        });
+</script>
+</head>
+<body>
+           You can check the Result in the Console :)
+</body>
+</html>
